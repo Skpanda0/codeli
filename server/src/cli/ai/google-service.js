@@ -1,9 +1,9 @@
 import {google} from '@ai-sdk/google'
-import {streamText} from 'ai'
-import config from "../../config/google.config.js"
+import {convertToModelMessages, streamText} from 'ai'
+import {config} from "../../config/google.config.js"
 import chalk from 'chalk'
 
-export class AIservice{
+export class AIService{
     constructor(){
         if(!config.googleApiKey){
             throw new Error("googleApiKey is not set in env")
@@ -26,8 +26,8 @@ export class AIservice{
     async sendMessage(messages, onChunk, tools = undefined, onToolCall = null){
         try {
             const streamConfig = {
-                model : this.model,
-                message : messages,
+                model: this.model,
+                messages: messages,  // ✅
             }
             const result = streamText(streamConfig)
             let fullResponse = ""

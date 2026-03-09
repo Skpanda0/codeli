@@ -28,6 +28,8 @@
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "figlet": "^1.10.0",
+    "marked": "^15.0.12",
+    "marked-terminal": "^7.3.0",
     "nodemon": "^3.1.14",
     "open": "^11.0.0",
     "prisma": "^6.19.2",
