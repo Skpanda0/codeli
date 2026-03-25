@@ -15,7 +15,7 @@ codeli/
 
 | Layer    | Technology              |
 |----------|-------------------------|
-| Frontend | Next.js, TypeScript, CSS |
+| Frontend | Next.js |
 | Backend  | Node.js, Express.js     |
 
 ## CLI Usage
